@@ -115,6 +115,9 @@ configure(webModule) {
     }
 
     dependencies {
+        compile('org.springframework:spring-websocket:5.2.3.RELEASE')
+        compile('org.springframework:spring-messaging:5.2.3.RELEASE')
+        compile('com.fasterxml.jackson.core:jackson-databind:2.10.3')
         compileOnly(servletApi)
         compile(globalModule)
     }
